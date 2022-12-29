@@ -1,0 +1,7 @@
+package com.kFoods.control;
+
+import com.kFoods.action.Action;
+
+public class IndexAction implements Action {
+
+}

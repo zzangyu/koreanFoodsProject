@@ -1,0 +1,5 @@
+package com.kFoods.control;
+
+public class ActionForward {
+
+}

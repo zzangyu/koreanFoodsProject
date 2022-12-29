@@ -1,0 +1,29 @@
+
+12월 29, 2022 14:08:16.115 NEW SESSION
+12월 29, 2022 14:08:16.115 [13060:5820:1229/140816.113:ERROR:device_event_log_impl.cc(215)] [14:08:16.113] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:08:16.115 [13060:5820:1229/140816.115:ERROR:device_event_log_impl.cc(215)] [14:08:16.115] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:08:46.438 [10780:14652:1229/140846.437:ERROR:device_event_log_impl.cc(215)] [14:08:46.437] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:08:46.443 [10780:14652:1229/140846.439:ERROR:device_event_log_impl.cc(215)] [14:08:46.439] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:09:05.432 [4780:8888:1229/140905.432:ERROR:device_event_log_impl.cc(215)] [14:09:05.431] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:09:05.434 [4780:8888:1229/140905.433:ERROR:device_event_log_impl.cc(215)] [14:09:05.433] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:10:49.755 [1480:12044:1229/141049.755:ERROR:device_event_log_impl.cc(215)] [14:10:49.755] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:10:49.758 [1480:12044:1229/141049.758:ERROR:device_event_log_impl.cc(215)] [14:10:49.758] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:11:47.410 [1480:17312:1229/141147.402:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 29, 2022 14:17:11.821 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+12월 29, 2022 14:33:59.82 [1480:12044:1229/143359.082:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+12월 29, 2022 14:34:13.316 [1480:12044:1229/143413.314:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+12월 29, 2022 14:52:23.160 [12172:4640:1229/145223.159:ERROR:device_event_log_impl.cc(215)] [14:52:23.159] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:52:23.166 [12172:4640:1229/145223.165:ERROR:device_event_log_impl.cc(215)] [14:52:23.165] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:53:20.800 [12172:1060:1229/145320.798:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 29, 2022 14:53:57.911 [3812:21124:1229/145357.905:ERROR:device_event_log_impl.cc(215)] [14:53:57.910] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:53:57.912 [3812:21124:1229/145357.912:ERROR:device_event_log_impl.cc(215)] [14:53:57.912] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2022 14:54:55.530 [3812:15936:1229/145455.529:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+12월 29, 2022 15:23:07.950 [3812:21124:1229/152307.950:ERROR:CONSOLE(1)] "Uncaught RangeError: Field is not present in this state", source: devtools://devtools/bundled/devtools-frontend/front_end/third_party/codemirror.next/chunk/codemirror.js (1)
+12월 29, 2022 15:39:21.695 [3812:20240:1229/153921.695:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+12월 29, 2022 15:39:53.483 [3812:20240:1229/153953.483:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+12월 29, 2022 15:40:48.297 [3812:20240:1229/154048.296:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+12월 29, 2022 15:42:10.757 [3812:20240:1229/154210.756:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+12월 29, 2022 15:42:31.910 [3812:20240:1229/154231.907:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+12월 29, 2022 15:42:34.723 [3812:20240:1229/154234.723:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+12월 29, 2022 15:50:56.625 [3812:21124:1229/155056.625:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+12월 29, 2022 15:51:48.78 [3812:21124:1229/155148.078:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost

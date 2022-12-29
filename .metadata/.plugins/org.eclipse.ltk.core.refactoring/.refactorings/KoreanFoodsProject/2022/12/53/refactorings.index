@@ -1,0 +1,14 @@
+1672287453503	Move 'koreanFoods' to 'webapp'
+1672288470509	Delete element
+1672288499974	Delete element
+1672288505259	Delete element
+1672288559367	Rename package 'koreanFoodsProject.action'
+1672288571891	Rename package 'koreanFoodsProject.common'
+1672288579000	Rename package 'koreanFoodsProject.model'
+1672288589698	Delete element
+1672288689097	Delete element
+1672289053833	Move compilation unit
+1672290386716	Rename resource 'foods.css'
+1672292513054	Move compilation unit
+1672292516817	Move compilation unit
+1672293103426	Rename type 'SignIpAction'
