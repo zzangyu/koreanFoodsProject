@@ -26,7 +26,7 @@ a {
 }
 .signUp_check_textSize {
 	font-size: 10px;
-	color: #999;
+	color: red;
 }
 #signUp_Wrap {
 	width: 410px;

@@ -1,9 +1,6 @@
 package com.kFoods.control;
 
-import com.kFoods.action.Action;
-import com.kFoods.action.IndexAction;
-import com.kFoods.action.SignInAction;
-import com.kFoods.action.SignUpAction;
+import com.kFoods.action.*;
 
 public class ActionFactory {
 	

@@ -1,0 +1,48 @@
+var xhr;
+	function idCheck() {
+		//xhr : ajax 통신을 위한 자바스크립트 객체
+		xhr = new XMLHttpRequest();
+		//alert(xhr);
+		
+		//callback 함수를 등록
+		//callback함수는 readystate가 변화될 때 호출된다. (서버가 응답할 때 호출된다)
+		xhr.onreadystatechange = callback;
+		
+		//open(method, ServerUrl)
+		// : 요청 정보(메서드 방식, 처리할 서버 프로그램 url) 설정
+		xhr.open("GET", "AsynSerlvet");
+		xhr.send(null); // POST 방식일 때, send 사용
+	}
+	
+	function callback() {
+		//readyState = 4 : 서버로부터 응답데이터를 받은 상태
+		//status = 200 : 정상 수행(exception X)
+		if (xhr.readyState==4 && xhr.status==200){
+			//responseText : 서버가 응답한 데이터
+			alert(xhr.responseText);
+		}
+	}
+/*function idCheck(){
+	var kf_id = $('#kf_id').val()
+	$.ajax({
+		type: 'POST',
+		url: './ControlServlet',
+		data: {kf_id : kf_id },
+		success: function(result) {
+			if(result == 1) {
+				$('#signUp_idCheck').html('사용할 수 있는 아이디입니다.');
+			} else {
+				$('#signUp_idCheck').html('사용할 수 없는 아이디입니다.');
+			}
+		}
+	})
+}*/
+function passwordCheckFunction() {
+	var userPassword1 = $('#kf_password').val();
+	var userPassword2 = $('#kf_passwordCheck').val();
+	if(userPassword1 != userPassword2) {
+		$('#signUp_pwReCheck').html('비밀번호가 일치하지 않습니다.');
+	} else {
+		$('#signUp_pwReCheck').html('비밀번호가 일치합니다.');
+	}
+}
