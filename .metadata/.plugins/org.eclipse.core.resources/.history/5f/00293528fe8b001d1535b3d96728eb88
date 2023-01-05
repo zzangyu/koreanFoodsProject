@@ -1,6 +1,0 @@
-fucntion signChck() {
-	var userID = $('#userID').val();
-	$.ajax({
-		type: 'POST'
-	})
-}

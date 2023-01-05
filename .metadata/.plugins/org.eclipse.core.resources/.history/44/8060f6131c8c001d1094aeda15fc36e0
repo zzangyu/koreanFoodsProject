@@ -1,0 +1,21 @@
+package com.kFoods.action;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.kFoods.control.ActionForward;
+
+public class IdCheckAction implements Action {
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		request.setCharacterEncoding("utf-8");
+		response.setContentType("text/html;charset=utf-8");
+		
+		
+		return new ActionForward("/koreanFoods/signUp.jsp", true);
+	}
+
+}

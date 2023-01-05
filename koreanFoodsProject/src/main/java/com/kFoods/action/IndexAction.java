@@ -13,5 +13,5 @@ public class IndexAction implements Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		return new ActionForward("/koreanFoods/index.jsp", false);
 	}
-
+	
 }

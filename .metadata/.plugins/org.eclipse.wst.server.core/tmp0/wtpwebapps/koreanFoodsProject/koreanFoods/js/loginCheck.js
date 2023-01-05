@@ -2,14 +2,18 @@ function idCheck(){
 	var kf_id = $('#kf_id').val()
 	$.ajax({
 		type: 'POST',
-		url: '/idCheck.test',
+		url: 'kFoods.do',
 		data: {kf_id : kf_id },
 		success: function(result) {
+			console.log(result);
 			if(result == 1) {
 				$('#signUp_idCheck').html('사용할 수 있는 아이디입니다.');
+				return;
 			} else {
 				$('#signUp_idCheck').html('사용할 수 없는 아이디입니다.');
+				return;
 			}
+			
 		}
 	})
 }

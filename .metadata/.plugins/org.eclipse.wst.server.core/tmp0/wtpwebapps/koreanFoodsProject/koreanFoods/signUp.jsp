@@ -49,7 +49,7 @@
 					<div class="signUp_check_textSize" id="signUp_emailCheck"></div>
 				</div>
 			</div>
-			<button class="signUp_button1">회원가입</button><button class="signUp_button1">로그인</button>
+			<button class="signUp_button1">회원가입</button><button class="signUp_button1" type="button" onClick="location.href='kfoods.do?cmd=signIn'">로그인</button>
 			<button onclick="history.go(-1); return false;" class="signUp_button2">뒤로가기</button>
 		</div>
 	</form>

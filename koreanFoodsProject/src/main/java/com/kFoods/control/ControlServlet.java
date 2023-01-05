@@ -5,7 +5,6 @@ import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,12 +13,6 @@ import com.kFoods.action.Action;
 
 public class ControlServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html;charset=utf-8");
-		response.getWriter().write("1");
-	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -27,6 +20,7 @@ public class ControlServlet extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		
 		String cmd = request.getParameter("cmd");
+		String id = request.getParameter("kf_id");
 		
 		if(cmd != null) {
 			ActionFactory factory = ActionFactory.getInstance();
@@ -41,15 +35,19 @@ public class ControlServlet extends HttpServlet {
 				rd.forward(request, response);
 			}
 		} else {
-			PrintWriter out = response.getWriter();
-			
-			out.println("<html>");
-			out.println("<head><title>Error</title></head>");
-			out.println("<body>");
-			out.println("<h4>올바른 요청이 아닙니다.</h4>");
-			out.println("<h4>http://localhost:8181/Project/project/cityPlan.do?cmd=요청키워드</h4>");
-			out.println("</body>");
-			out.println("</html>");
+			if(id != null) { // 아이디 실시간 중복체크 부분
+				response.getWriter().write("1");
+			} else {
+				PrintWriter out = response.getWriter();
+				
+				out.println("<html>");
+				out.println("<head><title>Error</title></head>");
+				out.println("<body>");
+				out.println("<h4>올바른 요청이 아닙니다.</h4>");
+				out.println("<h4>http://localhost:8181/Project/project/cityPlan.do?cmd=요청키워드</h4>");
+				out.println("</body>");
+				out.println("</html>");
+			}
 		}
 		
 	}
