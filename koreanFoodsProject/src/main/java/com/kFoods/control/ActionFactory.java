@@ -24,6 +24,10 @@ public class ActionFactory {
 			action = new SignUpAction();
 			break;
 			
+		case "signUpProc":
+			action = new SignUpProcAction();
+			break;
+			
 		case "signIn":
 			action = new SignInAction();
 			break;

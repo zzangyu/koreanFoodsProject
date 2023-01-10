@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;koreanFoodsProject/src/main/webapp/koreanFoods/js/loginCheck.js&apos; to &apos;accountManagement.js&apos;" description="Rename resource &apos;loginCheck.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/koreanFoods/js/loginCheck.js" name="accountManagement.js" stamp="1673317452266" updateReferences="true"/>
+</session>

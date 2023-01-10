@@ -1,0 +1,40 @@
+package com.kFoods.model;
+
+public class MembershipVO {
+	private char kfoods_id;
+	private char kfoods_pw1;
+	private char kfoods_pw2;
+	private char kfoods_email;
+	private char kfoods_nick;
+	public char getKfoods_id() {
+		return kfoods_id;
+	}
+	public void setKfoods_id(char kfoods_id) {
+		this.kfoods_id = kfoods_id;
+	}
+	public char getKfoods_pw1() {
+		return kfoods_pw1;
+	}
+	public void setKfoods_pw1(char kfoods_pw1) {
+		this.kfoods_pw1 = kfoods_pw1;
+	}
+	public char getKfoods_pw2() {
+		return kfoods_pw2;
+	}
+	public void setKfoods_pw2(char kfoods_pw2) {
+		this.kfoods_pw2 = kfoods_pw2;
+	}
+	public char getKfoods_email() {
+		return kfoods_email;
+	}
+	public void setKfoods_email(char kfoods_email) {
+		this.kfoods_email = kfoods_email;
+	}
+	public char getKfoods_nick() {
+		return kfoods_nick;
+	}
+	public void setKfoods_nick(char kfoods_nick) {
+		this.kfoods_nick = kfoods_nick;
+	}
+	
+}

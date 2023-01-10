@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.kFoods.action.Action;
+import com.kFoods.model.MembershipDAO;
 
 public class ControlServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -20,34 +21,45 @@ public class ControlServlet extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		
 		String cmd = request.getParameter("cmd");
-		String id = request.getParameter("kf_id");
+		
 		
 		if(cmd != null) {
-			ActionFactory factory = ActionFactory.getInstance();
-			Action action = factory.getAction(cmd);
-			
-			ActionForward af = action.execute(request, response);
-			
-			if(af.isRedirect()) {
-				response.sendRedirect(af.getUrl());
+			if(cmd.equals("idCheck")) {
+				String id = request.getParameter("kf_id");
+				MembershipDAO dao = new MembershipDAO();
+				response.getWriter().write(dao.idCheck(id)+"");
+				System.out.println(dao.idCheck(id));
+			} else if(cmd.equals("emailCheck")) {
+				String email = request.getParameter("kf_email");
+				MembershipDAO dao = new MembershipDAO();
+				response.getWriter().write(dao.emailCheck(email)+"");
+			} else if(cmd.equals("nickCheck")) {
+				String nick = request.getParameter("kf_nickname");
+				MembershipDAO dao = new MembershipDAO();
+				response.getWriter().write(dao.nickCheck(nick)+"");
 			} else {
-				RequestDispatcher rd = request.getRequestDispatcher(af.getUrl());
-				rd.forward(request, response);
+				ActionFactory factory = ActionFactory.getInstance();
+				Action action = factory.getAction(cmd);
+			
+				ActionForward af = action.execute(request, response);
+			
+				if(af.isRedirect()) {
+					response.sendRedirect(af.getUrl());
+				} else {
+					RequestDispatcher rd = request.getRequestDispatcher(af.getUrl());
+					rd.forward(request, response);
+				}
 			}
 		} else {
-			if(id != null) { // 아이디 실시간 중복체크 부분
-				response.getWriter().write("1");
-			} else {
-				PrintWriter out = response.getWriter();
-				
-				out.println("<html>");
-				out.println("<head><title>Error</title></head>");
-				out.println("<body>");
-				out.println("<h4>올바른 요청이 아닙니다.</h4>");
-				out.println("<h4>http://localhost:8181/Project/project/cityPlan.do?cmd=요청키워드</h4>");
-				out.println("</body>");
-				out.println("</html>");
-			}
+			PrintWriter out = response.getWriter();
+			
+			out.println("<html>");
+			out.println("<head><title>Error</title></head>");
+			out.println("<body>");
+			out.println("<h4>올바른 요청이 아닙니다.</h4>");
+			out.println("<h4>http://localhost:8181/Project/project/cityPlan.do?cmd=요청키워드</h4>");
+			out.println("</body>");
+			out.println("</html>");
 		}
 		
 	}

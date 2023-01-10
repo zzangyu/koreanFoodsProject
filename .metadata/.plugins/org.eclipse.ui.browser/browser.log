@@ -57,3 +57,14 @@
 1월 05, 2023 11:42:10.238 [12648:3536:0105/114210.229:ERROR:device_event_log_impl.cc(215)] [11:42:10.229] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 1월 05, 2023 11:43:07.778 [12648:12636:0105/114307.777:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
 1월 05, 2023 11:52:12.814 [12648:3536:0105/115212.814:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+1월 10, 2023 11:23:42.206 NEW SESSION
+1월 10, 2023 11:23:42.206 [9196:17804:0110/112342.204:ERROR:device_event_log_impl.cc(215)] [11:23:42.203] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+1월 10, 2023 11:23:42.207 [9196:17804:0110/112342.204:ERROR:device_event_log_impl.cc(215)] [11:23:42.204] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+1월 10, 2023 11:24:39.757 [9196:3284:0110/112439.757:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+1월 10, 2023 11:45:30.857 [9196:17804:0110/114530.857:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 10, 2023 11:45:30.857 [9196:17804:0110/114530.857:ERROR:interface_endpoint_client.cc(694)] Message 0 rejected by interface blink.mojom.WidgetHost
+1월 10, 2023 13:34:37.04 [9196:17804:0110/133437.004:ERROR:device_event_log_impl.cc(215)] [13:34:37.000] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+1월 10, 2023 13:34:37.23 [9196:17804:0110/133437.022:ERROR:device_event_log_impl.cc(215)] [13:34:37.021] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+1월 10, 2023 13:34:37.38 [9196:17804:0110/133437.037:ERROR:device_event_log_impl.cc(215)] [13:34:37.035] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+1월 10, 2023 13:34:37.49 [9196:17804:0110/133437.049:ERROR:device_event_log_impl.cc(215)] [13:34:37.049] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)

@@ -1,0 +1,5 @@
+package com.kFoods.model;
+
+public class MembershipVO {
+
+}
