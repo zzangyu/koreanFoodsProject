@@ -36,7 +36,6 @@ INDEX VERSION 1.131+C:\koreanFoods\.metadata\.plugins\org.eclipse.jdt.core
 2854906728.index
 3457836192.index
 588772621.index
-3188261716.index
 1208424231.index
 892367003.index
 2899289553.index

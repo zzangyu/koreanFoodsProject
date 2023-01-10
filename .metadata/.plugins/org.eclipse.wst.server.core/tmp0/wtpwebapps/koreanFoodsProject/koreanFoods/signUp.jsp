@@ -32,7 +32,7 @@
 				<label class="signUp_textSize">비밀번호 확인</label>
 				<div>
 					<input type="password" name="kf_passwordCheck" id="kf_passwordCheck" class="signUp_input" onkeyup="passwordCheckFunction()" maxLength="20">
-					<div class="signUp_check_textSize" id="signUp_pwReCheck"></div>
+					<div class="signUp_check_textSize" id="signUp_pwReCheck">입력하신 비밀번호와 동일하게 입력해주세요.</div>
 				</div>
 			</div>
 			<div>

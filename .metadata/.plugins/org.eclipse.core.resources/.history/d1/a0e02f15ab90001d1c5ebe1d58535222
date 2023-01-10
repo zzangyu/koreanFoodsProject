@@ -28,6 +28,7 @@ public class ControlServlet extends HttpServlet {
 				String id = request.getParameter("kf_id");
 				MembershipDAO dao = new MembershipDAO();
 				response.getWriter().write(dao.idCheck(id)+"");
+				System.out.println(dao.idCheck(id));
 			} else if(cmd.equals("emailCheck")) {
 				String email = request.getParameter("kf_email");
 				MembershipDAO dao = new MembershipDAO();
